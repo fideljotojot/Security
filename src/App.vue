@@ -1,9 +1,11 @@
 <script>
 import Signup from './components/SignupForm.vue';
+import Login from './components/LoginForm.vue';
 
 export default {
   components: {
-    Signup
+    Signup,
+    Login
   },
   data() {
     return {
@@ -35,7 +37,8 @@ export default {
         </div>
         <div class="form-container">
           <div class="form-box">
-            <Signup/>
+            <Signup v-if="page === 'signup'" @go-login="page = 'login'"/>
+            <Login v-else-if="page === 'login'"/>
           </div>
         </div>
       </div>
@@ -95,9 +98,10 @@ main {
 .form-box {
   width: 40em;
   height: 40em;
+  padding: 1em 1.5em;
   border: none;
   border-radius: 1em;
-  background-color: #4b4b4b;
+  background-color: #BCA88D;
 }
 
 footer {
