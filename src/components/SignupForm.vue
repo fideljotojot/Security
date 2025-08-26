@@ -156,30 +156,30 @@ export default {
 <style scoped>
 form {
   height: 100%;
-  padding: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5em;
+  gap: 1em;
 }
 
 .form-content {
   width: 100%;
-  height: 100%;
-  gap: 1em;
+  height: 80%;
+  gap: .5em;
   display: flex;
   flex-direction: column;
-  justify-content: start;
   align-items: center;
+  justify-content: center;
   background-color: #F1F0E4;
-  padding: 1.5em;
+  padding: 1.5em 2em;
   border-radius: 1em;
+  margin: auto;
 }
 
 .registration-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1em;
+  gap: 1em 1em .5em 1em;
   width: 100%;
 }
 
@@ -197,7 +197,7 @@ form {
 .form-group input, select {
   width: 90%;
   align-self: center;
-  padding: .5em 0 .5em 1em;
+  padding: .5em .5em .5em 1em;
   border-radius: 1em;
   border: 1px solid #111;
 }
@@ -226,7 +226,7 @@ hr {
   gap: 1em;
   width: 100%;
   justify-content: center;
-  margin-top: auto;
+  margin-top: 3em;
 }
 
 .btn {

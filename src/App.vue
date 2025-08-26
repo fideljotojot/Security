@@ -33,7 +33,7 @@ export default {
     <main>
       <div class="page-container" v-if="page === 'signup' || page === 'login'">
         <div class="logo-container">
-
+          <h1>Logo here</h1>
         </div>
         <div class="form-container">
           <div class="form-box">
@@ -65,12 +65,12 @@ header {
   display: flex;
   justify-content: flex-end;
   gap: 1em;
-  padding: 1em;
+  padding: .7em;
   background-color: #A2AF9B;
 }
 
 button {
-  padding: .5em .8em;
+  padding: .4em .8em;
   border: none;
   border-radius: 1em;
   box-shadow: 1px 1px 1px #00000087;
@@ -84,24 +84,33 @@ main {
 .page-container {
   display: flex;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 .logo-container {
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .form-container {
   flex: 1;
-  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  border-left: 1px solid grey;
 }
 
 .form-box {
-  width: 40em;
-  height: 40em;
-  padding: 1em 1.5em;
+  width: fit-content;
+  height: fit-content;
+  padding: 3em 2.5em;
   border: none;
   border-radius: 1em;
-  background-color: #BCA88D;
+  background-color: #bca88dca;
 }
 
 footer {
@@ -109,6 +118,7 @@ footer {
   margin-top: auto;
   text-align: center;
   background-color: #a2af9b9a;
-  padding: .8em;
+  padding: .5em;
+  font-size: .8em;
 }
 </style>

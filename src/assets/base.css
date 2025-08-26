@@ -61,8 +61,7 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  min-height: 100vh;
+  width: 100%;
   background: #EEEEEE;
   transition:
     color 0.5s,
