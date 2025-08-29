@@ -44,7 +44,8 @@ export default {
       </div>
 
       <div class="page-container" v-if="page === 'home'">
-        <p>Home</p>
+        <p style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores tempora illum id quae expedita esse? 
+          </p>
       </div>
     </main>
 
