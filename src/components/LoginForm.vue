@@ -11,7 +11,13 @@
         <label for="password">Password:</label>
       </div>
       <div class="btn-container">
-          <button type="button" class="btn" @click="$emit('go-home')">Login</button>
+          <v-btn class="btn mb-4" @click="$emit('go-home')"
+                prepend-icon="mdi-login"
+                color="blue"
+                size="large"
+                variant="tonal"
+                block
+          >Login</v-btn>
       </div>
     </div>
   </form>
@@ -33,7 +39,6 @@ form {
 h1 {
   font-weight: bolder;
   text-transform: uppercase;
-  margin-bottom: .5em;
 }
 
 .form-content {
@@ -44,7 +49,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #F1F0E4;
+  background-color: #9b9b8cae;
   padding: 1em 2em;
   border-radius: 1em;
   margin: auto 0;
@@ -62,7 +67,7 @@ h1 {
 }
 
 .form-group input, select {
-  width: 90%;
+  width: 100%;
   align-self: center;
   padding: .5em .5em .5em 1em;
   border-radius: 1em;

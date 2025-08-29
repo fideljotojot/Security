@@ -170,7 +170,7 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #F1F0E4;
+  background-color: #9b9b8cae;
   padding: 1.5em 2em;
   border-radius: 1em;
   margin: auto;
